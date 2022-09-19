@@ -1,0 +1,106 @@
+.bigger-slick-dots .slick-dots {
+	width: 50%;
+	margin-left: 25%;
+    bottom: -65px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.bigger-slick-dots .slick-dots button::before {
+    content: none;
+}
+
+.bigger-slick-dots .slick-dots button {
+	margin-top: 1rem;
+	cursor: pointer;
+	padding: 0;
+	border-radius: 50%;
+	color: transparent;
+	border: 1px solid grey;
+	transition: background-color 0.3s ease;
+	width: 13px !important;
+	height: 13px !important;
+	margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.bigger-slick-dots .slick-dots .slick-active button {
+	background-color: $orange;
+    border-color: $orange;
+}
+
+.bigger-slick-dots .slick-dots li {
+    margin-right: 2px !important;
+    margin-left: 0 !important;
+}
+
+.bigger-slick-dots .slick-dots li:last-child button {
+	margin-right: 0 !important;
+} 
+
+// -slider-spacing-sm-
+.slider-spacing-sm .slick-slide > div {
+	margin: 0 1vw !important;
+}
+
+.slider-spacing-sm .slick-slide > div:not(:first-child) {
+	margin-top: 1.3vw !important;
+}
+
+.slider-spacing-sm .slick-list {
+	margin: 0 1vw !important;
+}
+
+/* -slider-arrows- */
+.slider-arrows .slick-arrow::before {
+	cursor: pointer;
+	color: $orange;
+	font-family: "FontAwesome";
+}
+
+.slider-arrows .slick-prev {
+	left: 1.5rem;
+	z-index: 5;
+}
+
+.slider-arrows .slick-next {
+	right: 1.5rem;
+	z-index: 5;
+}
+
+.slider-arrows .slick-prev::before {
+	content: "\f060";
+}
+
+.slider-arrows .slick-next::before {
+	content: "\f061";
+}
+
+@media (min-width: 576px) {
+
+	.slider-arrows .slick-prev {
+		left: -2rem;
+	}
+	
+	.slider-arrows .slick-next {
+		right: -2rem;
+	}
+
+}
+
+/* the-end-of-slider-arrows */
+
+// -slider-height-normal-
+.slider-height-normal .slick-slide > div > * {
+	height: 18vw;
+}
+
+@media (min-width: 576px) {
+	.slider-height-normal .slick-slide > div > * {
+		height: 15vw;
+	}
+}
+

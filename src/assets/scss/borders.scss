@@ -1,0 +1,20 @@
+@media (min-width: 992px) {
+
+    .border-lg-5 {
+        border-width: 5px !important;
+    }
+
+    .border-right-lg-1 {
+        border-right: 1px solid $lightgrey2;
+    }
+
+}
+
+.border-light-blue {
+    border: 1px solid $lightblue;
+}
+
+.border-bottom-light-blue {
+    border-bottom: 1px solid $lightblue;
+}
+

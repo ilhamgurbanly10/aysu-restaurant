@@ -1,0 +1,59 @@
+// -black-rotated-box-
+.black-rotated-box {
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 5px;
+    background-color: $darkblack;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    transition: all .5s;
+    transform: rotate(45deg);
+    position: relative;
+    top: 11px;
+    color: white;
+}
+
+.black-rotated-box i {
+    transform: rotate(-45deg);
+    transition: all .5s;
+    font-size: 16px !important;
+    line-height: 16px !important;
+}
+
+.box-link-2-text {
+    transition: color .3s;
+    white-space: normal;
+}
+
+@media (hover: hover) {
+
+    .black-rotated-box-parent:hover .black-rotated-box {
+        transform: rotate(90deg);
+        background-color: $orange;
+    }
+
+    .black-rotated-box-parent:hover .black-rotated-box i {
+        transform: rotate(-90deg);
+    }
+
+    .black-rotated-box-parent:hover .box-link-2-text {
+        color: $orange;
+    }
+
+}
+
+.black-rotated-box-parent:active .black-rotated-box {
+    transform: rotate(90deg);
+    background-color: $orange;
+}
+
+.black-rotated-box-parent:active .black-rotated-box i {
+    transform: rotate(-90deg);
+}
+
+.black-rotated-box-parent:active .box-link-2-text {
+    color: $orange;
+}

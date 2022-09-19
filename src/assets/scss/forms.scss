@@ -1,0 +1,98 @@
+// -input-
+.input {
+    padding: .8rem 1rem .8rem 3rem;
+    border-radius: 0;
+    border: 1px solid black !important;
+    box-shadow: none !important;
+    font-size: 18px !important;
+    font-weight: normal;
+    color: $darkgrey;
+}
+
+.input.border-0 {
+    border: 0 !important;
+}
+
+.input-icon {
+    position: absolute;
+    top: 30%;
+    height: 40%;
+    left: 1rem;
+    color: $orange;
+}
+
+// -ant-form-container-
+.ant-form-container {
+    position: relative;
+}
+
+.ant-form-container input {
+    padding: 17px 5rem 17px 20px;
+    border: 1px solid $darkblack;
+    line-height: 1;
+    border-radius: 0;
+    box-shadow: none !important;
+}
+
+.ant-form-container input:hover,
+.ant-form-container input:focus {
+    border-color: $darkblack;
+}
+
+.ant-form-container button {
+    position: static !important;
+    height: 0;
+    padding: 0;
+    border: 0;
+}
+
+.ant-form-container .ant-form-item,
+.ant-form-container .ant-form-item-row,
+.ant-form-container .ant-form-item-control,
+.ant-form-container .ant-form-item-control-input {
+    position: static;
+}
+
+
+.ant-form-container button::after {
+    content: "\f178";
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0;
+    position: absolute;
+    left: initial !important;
+    right: 20px !important;
+    opacity: 1 !important;
+    top: 6px;
+    color: $darkblack;
+    transition: right .3s;
+    font-family: FontAwesome;
+    box-shadow: none !important;
+}
+
+@media (hover: hover) {
+    .ant-form-container button:hover::after {
+        right: 10px !important;
+    }
+}
+
+.ant-form-container button:active::after {
+    right: 10px !important;
+}
+
+.ant-form-container * {
+    font-size: 16px;
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+.ant-form-container form {
+    box-shadow: none !important;
+    outline: 0 !important;
+    border: 0 !important;
+}
+
+.ant-form-container .ant-form-item-explain-error {
+    margin-top: 1rem;
+    text-align: left;
+}
